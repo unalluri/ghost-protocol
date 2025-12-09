@@ -38,10 +38,10 @@ const Index = () => {
   const growthPercentage = totalPosts > 0 ? Math.round(((totalPosts - mockLastMonthTotal) / mockLastMonthTotal) * 100) : 0
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-red-500/5 data-grid bg-noise">
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-[#1B998B]/5 data-grid bg-noise">
       <div className="max-w-6xl mx-auto space-y-6 p-6">
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600 mb-2">
+        <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#1B998B] to-[#1B998B] mb-2">
           Welcome back!
         </h1>
         <p className="text-muted-foreground">Here's an overview of your content performance</p>
@@ -58,22 +58,22 @@ const Index = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card className="futuristic-border glow-hover backdrop-blur-sm shadow-xl relative overflow-hidden">
           {/* Animated background elements */}
-          <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent"></div>
-          <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-red-500/10 to-transparent rounded-bl-full"></div>
-          
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1B998B]/5 to-transparent"></div>
+          <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-[#1B998B]/10 to-transparent rounded-bl-full"></div>
+
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Total Posts</CardTitle>
-            <BarChart3 className="h-4 w-4 text-red-400 drop-shadow-glow animate-pulse" />
+            <BarChart3 className="h-4 w-4 text-[#1B998B] drop-shadow-glow animate-pulse" />
           </CardHeader>
           <CardContent>
             <div className="relative">
-              <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600 animate-pulse-glow">
+              <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#1B998B] to-[#1B998B] animate-pulse-glow">
                 {postsLoading ? "..." : totalPosts}
               </div>
               {/* Progress bar visual */}
               <div className="mt-2 h-1 bg-muted rounded-full overflow-hidden">
-                <div 
-                  className="h-full bg-gradient-to-r from-red-500 to-red-600 rounded-full animate-data-pulse"
+                <div
+                  className="h-full bg-gradient-to-r from-[#1B998B] to-[#1B998B] rounded-full animate-data-pulse"
                   style={{ width: `${Math.min(100, (totalPosts / 10) * 100)}%` }}
                 ></div>
               </div>

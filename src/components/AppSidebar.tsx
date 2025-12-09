@@ -34,7 +34,7 @@ export function AppSidebar() {
         <div className="flex items-center space-x-2">
           <MilitaryLogo size="md" />
           <div>
-            <h1 className="font-mono font-bold text-lg text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600 tracking-wider">
+            <h1 className="font-mono font-bold text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#1B998B] to-[#1B998B] tracking-wider">
               Ghost Protocol
             </h1>
             <p className="text-sm text-muted-foreground tracking-widest uppercase font-medium">
@@ -46,7 +46,7 @@ export function AppSidebar() {
 
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel className="text-red-400 uppercase tracking-wider text-sm font-bold">
+          <SidebarGroupLabel className="text-[#1B998B] uppercase tracking-wider text-sm font-bold">
             NAVIGATION MATRIX
           </SidebarGroupLabel>
           <SidebarGroupContent>
@@ -56,20 +56,20 @@ export function AppSidebar() {
                   <SidebarMenuButton asChild>
                     <NavLink 
                       to={item.url}
-                      className={({ isActive }) => 
+                      className={({ isActive }) =>
                         `flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-300 w-full futuristic-border glow-hover text-base font-medium tracking-wide ${
-                          isActive 
-                            ? "bg-gradient-to-r from-red-500/20 to-red-600/20 text-red-400 font-medium border border-red-500/30" 
-                            : "text-sidebar-foreground hover:bg-gradient-to-r hover:from-red-500/10 hover:to-red-600/10 hover:text-red-300"
+                          isActive
+                            ? "bg-gradient-to-r from-[#1B998B]/20 to-[#1B998B]/20 text-[#1B998B] font-medium border border-[#1B998B]/30"
+                            : "text-sidebar-foreground hover:bg-gradient-to-r hover:from-[#1B998B]/10 hover:to-[#1B998B]/10 hover:text-[#1B998B]/80"
                         }`
                       }
                     >
                       {({ isActive }) => (
                         <>
-                          <item.icon className={`h-5 w-5 ${isActive ? 'text-red-400 scale-110 drop-shadow-glow' : ''}`} />
+                          <item.icon className={`h-5 w-5 ${isActive ? 'text-[#1B998B] scale-110 drop-shadow-glow' : ''}`} />
                           <span className="tracking-wide font-medium">{item.title}</span>
                           {isActive && item.title === 'Create Post' && (
-                            <span className="w-2 h-2 bg-red-500 rounded-full ml-auto animate-pulse"></span>
+                            <span className="w-2 h-2 bg-[#1B998B] rounded-full ml-auto animate-pulse"></span>
                           )}
                         </>
                       )}
