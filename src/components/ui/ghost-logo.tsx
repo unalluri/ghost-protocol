@@ -24,22 +24,22 @@ export const MilitaryLogo: React.FC<MilitaryLogoProps> = ({
       className
     )}>
       {/* Outer tactical ring */}
-      <div className="absolute inset-0 border-2 border-red-500/30 rounded-lg animate-spin-slow">
-        <div className="absolute -top-1 -left-1 w-2 h-2 border-l-2 border-t-2 border-red-500"></div>
-        <div className="absolute -top-1 -right-1 w-2 h-2 border-r-2 border-t-2 border-red-500"></div>
-        <div className="absolute -bottom-1 -left-1 w-2 h-2 border-l-2 border-b-2 border-red-500"></div>
-        <div className="absolute -bottom-1 -right-1 w-2 h-2 border-r-2 border-b-2 border-red-500"></div>
+      <div className="absolute inset-0 border-2 border-[#06b6d4]/30 rounded-lg animate-spin-slow">
+        <div className="absolute -top-1 -left-1 w-2 h-2 border-l-2 border-t-2 border-[#06b6d4]"></div>
+        <div className="absolute -top-1 -right-1 w-2 h-2 border-r-2 border-t-2 border-[#06b6d4]"></div>
+        <div className="absolute -bottom-1 -left-1 w-2 h-2 border-l-2 border-b-2 border-[#06b6d4]"></div>
+        <div className="absolute -bottom-1 -right-1 w-2 h-2 border-r-2 border-b-2 border-[#06b6d4]"></div>
       </div>
 
       {/* Main logo container */}
-      <div className="relative w-full h-full bg-gradient-to-br from-red-500 to-red-700 rounded-lg animate-pulse-glow">
+      <div className="relative w-full h-full bg-gradient-to-br from-[#06b6d4] to-[#0891b2] rounded-lg animate-pulse-glow">
         {/* Scanning line effect */}
         <div className="absolute inset-0 overflow-hidden rounded-lg">
-          <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-red-300 to-transparent animate-scan"></div>
+          <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#67e8f9] to-transparent animate-scan"></div>
         </div>
 
         {/* Flicker overlay */}
-        <div className="absolute inset-0 bg-red-400/20 rounded-lg animate-flicker"></div>
+        <div className="absolute inset-0 bg-[#22d3ee]/20 rounded-lg animate-flicker"></div>
 
         {/* Shield and star SVG */}
         <svg
