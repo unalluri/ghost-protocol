@@ -627,7 +627,7 @@ export default function CreatePost() {
   }, [topicType, form]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-red-500/5 data-grid bg-noise p-4 lg:p-8">
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-[#06b6d4]/5 data-grid bg-noise p-4 lg:p-8">
       <div className="max-w-7xl mx-auto space-y-8">
         {/* Header Section */}
         <div className="mb-8">
@@ -635,7 +635,7 @@ export default function CreatePost() {
             <Sparkles className="h-4 w-4" />
             AI-Powered Content Creation
           </div>
-          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent animate-pulse-glow">
+          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight bg-gradient-to-r from-[#06b6d4] to-[#06b6d4] bg-clip-text text-transparent animate-pulse-glow">
             Create LinkedIn Posts
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -939,10 +939,10 @@ export default function CreatePost() {
                 </div>
               </CardHeader>
               <CardContent>
-                <div className="min-h-[400px] max-h-[500px] overflow-y-auto rounded-xl border-2 border-dashed border-red-500/20 bg-gradient-to-br from-muted/30 to-red-500/5 p-6 relative">
+                <div className="min-h-[400px] max-h-[500px] overflow-y-auto rounded-xl border-2 border-dashed border-[#06b6d4]/20 bg-gradient-to-br from-muted/30 to-[#06b6d4]/5 p-6 relative">
                   {/* Scanning line effect */}
                   <div className="absolute inset-0 overflow-hidden rounded-xl">
-                    <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-red-300 to-transparent animate-scan"></div>
+                    <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#06b6d4] to-transparent animate-scan"></div>
                   </div>
                   
                   {generatedPost ? (

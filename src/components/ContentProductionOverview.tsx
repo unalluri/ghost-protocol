@@ -11,14 +11,14 @@ export const ContentProductionOverview: React.FC<ContentProductionOverviewProps>
   scheduledThisWeek 
 }) => {
   return (
-    <div className="relative w-full h-64 bg-gradient-to-br from-background via-background to-red-500/5 rounded-lg overflow-hidden border border-red-500/20 futuristic-border glow-hover">
+    <div className="relative w-full h-64 bg-gradient-to-br from-background via-background to-[#06b6d4]/5 rounded-lg overflow-hidden border border-[#06b6d4]/20 futuristic-border glow-hover">
       {/* Background grid */}
       <div className="absolute inset-0 data-grid opacity-20"></div>
       <div className="absolute inset-0 bg-noise opacity-10"></div>
       
       {/* Animated scanning line */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-red-400 to-transparent animate-scan"></div>
+        <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#06b6d4] to-transparent animate-scan"></div>
       </div>
 
       {/* Content Production Metrics */}
@@ -27,14 +27,14 @@ export const ContentProductionOverview: React.FC<ContentProductionOverviewProps>
           {/* Total Posts Metric */}
           <div className="text-center space-y-2">
             <div className="relative">
-              <div className="w-16 h-16 mx-auto bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-full flex items-center justify-center animate-pulse-glow">
-                <Edit className="h-8 w-8 text-red-400 drop-shadow-glow" />
+              <div className="w-16 h-16 mx-auto bg-gradient-to-br from-[#06b6d4]/20 to-[#06b6d4]/20 rounded-full flex items-center justify-center animate-pulse-glow">
+                <Edit className="h-8 w-8 text-[#06b6d4] drop-shadow-glow" />
               </div>
               {/* Pulsing ring */}
-              <div className="absolute inset-0 w-16 h-16 mx-auto border-2 border-red-500/30 rounded-full animate-data-pulse"></div>
+              <div className="absolute inset-0 w-16 h-16 mx-auto border-2 border-[#06b6d4]/30 rounded-full animate-data-pulse"></div>
             </div>
             <div className="space-y-1">
-              <div className="text-2xl font-bold text-red-400 animate-pulse-glow">
+              <div className="text-2xl font-bold text-[#06b6d4] animate-pulse-glow">
                 {totalPosts}
               </div>
               <div className="text-xs text-muted-foreground uppercase tracking-wider">
@@ -64,7 +64,7 @@ export const ContentProductionOverview: React.FC<ContentProductionOverviewProps>
         </div>
 
         {/* Central connection line */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-px bg-gradient-to-r from-red-500/50 via-primary/50 to-blue-500/50 animate-data-pulse"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-px bg-gradient-to-r from-[#06b6d4]/50 via-primary/50 to-blue-500/50 animate-data-pulse"></div>
       </div>
 
       {/* Performance indicator */}
@@ -75,17 +75,17 @@ export const ContentProductionOverview: React.FC<ContentProductionOverviewProps>
             <span className="text-xs text-green-400 font-mono uppercase tracking-wider">Production Active</span>
           </div>
           <div className="flex items-center space-x-2">
-            <TrendingUp className="h-3 w-3 text-red-400" />
-            <span className="text-xs text-red-400 font-mono">+{Math.round((totalPosts / Math.max(1, totalPosts - 1)) * 100 - 100)}%</span>
+            <TrendingUp className="h-3 w-3 text-[#06b6d4]" />
+            <span className="text-xs text-[#06b6d4] font-mono">+{Math.round((totalPosts / Math.max(1, totalPosts - 1)) * 100 - 100)}%</span>
           </div>
         </div>
       </div>
 
       {/* Corner brackets for futuristic feel */}
-      <div className="absolute top-2 left-2 w-4 h-4 border-l-2 border-t-2 border-red-500/40"></div>
-      <div className="absolute top-2 right-2 w-4 h-4 border-r-2 border-t-2 border-red-500/40"></div>
-      <div className="absolute bottom-2 left-2 w-4 h-4 border-l-2 border-b-2 border-red-500/40"></div>
-      <div className="absolute bottom-2 right-2 w-4 h-4 border-r-2 border-b-2 border-red-500/40"></div>
+      <div className="absolute top-2 left-2 w-4 h-4 border-l-2 border-t-2 border-[#06b6d4]/40"></div>
+      <div className="absolute top-2 right-2 w-4 h-4 border-r-2 border-t-2 border-[#06b6d4]/40"></div>
+      <div className="absolute bottom-2 left-2 w-4 h-4 border-l-2 border-b-2 border-[#06b6d4]/40"></div>
+      <div className="absolute bottom-2 right-2 w-4 h-4 border-r-2 border-b-2 border-[#06b6d4]/40"></div>
     </div>
   );
 };

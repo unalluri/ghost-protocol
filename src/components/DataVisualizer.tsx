@@ -2,7 +2,7 @@ import React from 'react';
 
 export const DataVisualizer: React.FC = () => {
   return (
-    <div className="relative w-full h-64 bg-gradient-to-br from-background via-background to-red-500/5 rounded-lg overflow-hidden border border-red-500/20">
+    <div className="relative w-full h-64 bg-gradient-to-br from-background via-background to-[#06b6d4]/5 rounded-lg overflow-hidden border border-[#06b6d4]/20">
       {/* Background grid */}
       <div className="absolute inset-0 data-grid opacity-30"></div>
       
@@ -11,7 +11,7 @@ export const DataVisualizer: React.FC = () => {
         {Array.from({ length: 8 }).map((_, i) => (
           <div
             key={i}
-            className="absolute w-px bg-gradient-to-b from-red-500 to-transparent animate-matrix-rain"
+            className="absolute w-px bg-gradient-to-b from-[#06b6d4] to-transparent animate-matrix-rain"
             style={{
               left: `${12.5 * (i + 1)}%`,
               height: '20px',
@@ -26,7 +26,7 @@ export const DataVisualizer: React.FC = () => {
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="relative">
           {/* Central hub */}
-          <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse-glow shadow-lg shadow-red-500/50"></div>
+          <div className="w-4 h-4 bg-[#06b6d4] rounded-full animate-pulse-glow shadow-lg shadow-[#06b6d4]/50"></div>
           
           {/* Connecting lines and nodes */}
           {Array.from({ length: 6 }).map((_, i) => {
@@ -39,7 +39,7 @@ export const DataVisualizer: React.FC = () => {
               <div key={i} className="absolute top-2 left-2">
                 {/* Connection line */}
                 <div
-                  className="absolute w-px bg-gradient-to-r from-red-500/50 to-red-500/20 origin-left animate-data-pulse"
+                  className="absolute w-px bg-gradient-to-r from-[#06b6d4]/50 to-[#06b6d4]/20 origin-left animate-data-pulse"
                   style={{
                     width: `${radius}px`,
                     transform: `rotate(${i * 60}deg)`,
@@ -49,7 +49,7 @@ export const DataVisualizer: React.FC = () => {
                 
                 {/* Data node */}
                 <div
-                  className="absolute w-2 h-2 bg-red-400 rounded-full animate-data-pulse"
+                  className="absolute w-2 h-2 bg-[#06b6d4] rounded-full animate-data-pulse"
                   style={{
                     left: `${x}px`,
                     top: `${y}px`,
@@ -64,7 +64,7 @@ export const DataVisualizer: React.FC = () => {
 
       {/* Scanning overlay */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-red-400 to-transparent animate-scan"></div>
+        <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#06b6d4] to-transparent animate-scan"></div>
       </div>
 
       {/* Data streams */}
@@ -73,7 +73,7 @@ export const DataVisualizer: React.FC = () => {
           {Array.from({ length: 12 }).map((_, i) => (
             <div
               key={i}
-              className="bg-gradient-to-t from-red-500/60 to-red-500/20 rounded-sm animate-data-pulse"
+              className="bg-gradient-to-t from-[#06b6d4]/60 to-[#06b6d4]/20 rounded-sm animate-data-pulse"
               style={{
                 width: '8px',
                 height: `${Math.random() * 40 + 10}px`,
@@ -92,7 +92,7 @@ export const DataVisualizer: React.FC = () => {
         </div>
         <div className="flex items-center space-x-2">
           <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-          <span className="text-xs text-red-400 font-mono">ACTIVE</span>
+          <span className="text-xs text-[#06b6d4] font-mono">ACTIVE</span>
         </div>
       </div>
     </div>

@@ -398,7 +398,7 @@ export default function LeadMagnet() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-red-500/5 p-4 lg:p-8">
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-[#06b6d4]/5 p-4 lg:p-8">
       <div className="max-w-7xl mx-auto space-y-8">
         {/* Header Section */}
         {/* <div className="text-center space-y-4"> */}
@@ -407,7 +407,7 @@ export default function LeadMagnet() {
             <Sparkles className="h-4 w-4" />
             <span className="text-sm font-medium">AI-Powered Lead Magnet Generator</span>
           </div>
-          <h1 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent animate-pulse-glow">
+          <h1 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#06b6d4] to-[#06b6d4] bg-clip-text text-transparent animate-pulse-glow">
             Lead Magnet AI
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
