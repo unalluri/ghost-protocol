@@ -8,16 +8,16 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 222 84% 4.9%;
+    --background: 220 60% 12%;
     --foreground: 210 40% 98%;
 
-    --card: 222 84% 4.9%;
+    --card: 220 60% 12%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222 84% 4.9%;
+    --popover: 220 60% 12%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 0 84% 60%;
+    --primary: 190 84% 60%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -34,15 +34,15 @@ All colors MUST be HSL.
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 0 84% 60%;
+    --ring: 190 84% 60%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 222.2 84% 4.9%;
+    --sidebar-background: 220 60% 10%;
 
     --sidebar-foreground: 210 40% 98%;
 
-    --sidebar-primary: 0 84% 60%;
+    --sidebar-primary: 190 84% 60%;
 
     --sidebar-primary-foreground: 210 40% 98%;
 
@@ -52,20 +52,20 @@ All colors MUST be HSL.
 
     --sidebar-border: 217.2 32.6% 17.5%;
 
-    --sidebar-ring: 0 84% 60%;
+    --sidebar-ring: 190 84% 60%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 220 60% 12%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 220 60% 12%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 220 60% 12%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 0 84% 60%;
+    --primary: 190 84% 60%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -82,15 +82,15 @@ All colors MUST be HSL.
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 0 84% 60%;
-    --sidebar-background: 240 5.9% 10%;
+    --ring: 190 84% 60%;
+    --sidebar-background: 220 60% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 0 84% 60%;
+    --sidebar-primary: 190 84% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 0 84% 60%;
+    --sidebar-ring: 190 84% 60%;
   }
 }
 
